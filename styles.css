@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+main {
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    max-width: 600px;
+    width: 100%;
+    margin: 1rem;
+}
+
+form div, #paymentMethod {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+select, input {
+    width: 100%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.75rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#seats {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 0.5rem;
+}
+
+.seat {
+    background-color: #ddd;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.seat.selected {
+    background-color: #333;
+    color: #fff;
+}
